@@ -89,7 +89,8 @@ import static org.mockito.Mockito.*;
                 "testSendMessageWithKafkaTransactionRollback"
         },
         count = 3,
-        ports = {0, 0, 0}
+        ports = {0, 0, 0},
+        zkSessionTimeout = 20000
 )
 public class KafkaPublisherTest {
 

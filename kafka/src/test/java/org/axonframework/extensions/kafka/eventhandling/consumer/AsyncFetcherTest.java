@@ -65,7 +65,7 @@ import static org.mockito.Mockito.*;
  */
 @DirtiesContext
 @ExtendWith(SpringExtension.class)
-@EmbeddedKafka(topics = {"testStartFetcherWith_ExistingToken_ShouldStartAtSpecificPositions"}, partitions = 5)
+@EmbeddedKafka(topics = {"testStartFetcherWith_ExistingToken_ShouldStartAtSpecificPositions"}, partitions = 5, zkSessionTimeout = 20000)
 class AsyncFetcherTest {
 
     private static final String TEST_TOPIC = "some-topic";
