@@ -63,7 +63,8 @@ import static org.mockito.Mockito.*;
                 "testTransactionalProducerBehaviorOnCommittingAnAbortedTransaction"
         },
         count = 3,
-        ports = {0, 0, 0}
+        ports = {0, 0, 0},
+        zkSessionTimeout = 20000
 )
 class DefaultProducerFactoryTest {
 
