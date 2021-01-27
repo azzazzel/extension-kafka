@@ -63,8 +63,7 @@ import static org.springframework.kafka.test.utils.KafkaTestUtils.getRecords;
                 "testSeekUsing_ExistingToken_ConsumerStartsAtSpecificPosition",
                 "testSeekUsing_ExistingToken_ConsumerStartsAtSpecificPosition_AndCanContinueReadingNewRecords"
         },
-        partitions = 5,
-        zkSessionTimeout = 20000
+        partitions = 5
 )
 class TrackingTokenConsumerRebalanceListenerIntegrationTest {
 

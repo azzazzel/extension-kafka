@@ -46,7 +46,7 @@ import static org.mockito.Mockito.*;
  */
 @RunWith(SpringRunner.class)
 @DirtiesContext
-@EmbeddedKafka(topics = {"testCreatedConsumer_ValidConfig_CanCommunicateToKafka"}, partitions = 1, zkSessionTimeout = 20000)
+@EmbeddedKafka(topics = {"testCreatedConsumer_ValidConfig_CanCommunicateToKafka"}, partitions = 1)
 public class DefaultConsumerFactoryTest {
 
     @SuppressWarnings("SpringJavaAutowiredMembersInspection")

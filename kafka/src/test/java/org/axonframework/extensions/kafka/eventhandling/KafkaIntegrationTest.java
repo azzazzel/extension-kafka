@@ -57,7 +57,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 @ExtendWith(SpringExtension.class)
 @DirtiesContext
-@EmbeddedKafka(topics = {"integration"}, partitions = 5, controlledShutdown = true, zkSessionTimeout = 20000)
+@EmbeddedKafka(topics = {"integration"}, partitions = 5, controlledShutdown = true)
 class KafkaIntegrationTest {
 
     @SuppressWarnings("SpringJavaAutowiredMembersInspection")
